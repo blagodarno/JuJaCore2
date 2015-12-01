@@ -10,48 +10,55 @@ import static org.junit.Assert.assertEquals;
 public class MainTest {
 
     @Test
-    public void test1() {
+    public void test_codex_codey() {
         assertMethod("codex", "codey");
     }
 
     @Test
-    public void test2() {
+    public void test_x_y() {
         assertMethod("x", "y");
     }
 
     @Test
-    public void test3() {
+    public void test_xxhixx_yyhiyy() {
+        assertMethod("xxxhixxx", "yyyhiyyy");
         assertMethod("xxhixx", "yyhiyy");
+        assertMethod("xhix", "yhiy");
     }
 
     @Test
-    public void test5() {
+    public void test_hiy_hiy() {
         assertMethod("hiy", "hiy");
+        assertMethod("yih", "yih");
     }
 
     @Test
-    public void test6() {
+    public void test_h_h() {
         assertMethod("h", "h");
+        assertMethod("a", "a");
     }
 
     @Test
-    public void test7() {
+    public void test__() {
         assertMethod("", "");
     }
 
     @Test
-    public void test8() {
+    public void test_xxx_yyy() {
+        assertMethod("x", "y");
         assertMethod("xxx", "yyy");
+        assertMethod("xxxx", "yyyy");
     }
 
     @Test
-    public void test9() {
+    public void test_yyhxyi_yyhyyi() {
         assertMethod("yyhxyi", "yyhyyi");
     }
 
     @Test
-    public void test10() {
+    public void test_hihi_hihi() {
         assertMethod("hihi", "hihi");
+        assertMethod("haha", "haha");
     }
 
     private static void assertMethod(String input, String expected) {
