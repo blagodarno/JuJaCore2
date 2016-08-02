@@ -1,11 +1,12 @@
 package ua.com.juja;
 
 import org.junit.Test;
+import ua.com.juja.example_testing.Main;
 
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by oleksandr.baglai on 01.12.2015.
+ * Created by oleksandr.baglai on 01.12.2015.  ййй
  */
 public class MainTest {
 
